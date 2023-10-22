@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Poppins:wght@400;700;800&family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+*{
+    font-Family: "Poppins";
+    font-weight: 400, 700, 800;
+}

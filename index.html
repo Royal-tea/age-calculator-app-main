@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" text="text/css" href="/assets/styles.css">
+  <script src="/assets/client.js"></script>
   
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -15,23 +17,25 @@
   </style>
 </head>
 <body>
+  <div id="container">
+    <div id="content-container">
+      <label for="inp-day">DAY</label>
+      <input id="inp-day" type="number" min="1" max="31" placeholder="DD">
 
-  Day
-  DD
+      <label for="inp-month">MONTH</label>
+      <input id="inp-month" type="number" min="1" max="12" placeholder="MM">
 
-  Month
-  MM
+      <label for="inp-year">YEAR</label>
+      <input id="inp-year" type="number" min="1900" max="2021" placeholder="YYYY">
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
+      <p class="age-display" id="disp-year">-- Years</p>
+      <p class="age-display" id="disp-month">-- Months</p>
+      <p class="age-display" id="disp-day">-- Days</p>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Traz Davids</a>.
   </div>
 </body>
 </html>
