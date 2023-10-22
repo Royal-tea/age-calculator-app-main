@@ -1,6 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Poppins:wght@400;700;800&family=Roboto:ital,wght@0,400;1,500&display=swap');
 
-*{
+
+#container{
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+}
+
+#content-container{
+    margin: 15%;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
     font-Family: "Poppins";
-    font-weight: 400, 700, 800;
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 20px 20px 90px;
+}
+
+.labels{
+    color: hsl(0, 1%, 44%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+hr{
+    width: 80%;
+    margin-left: 0;
+}
+
+strong{
+    color: hsl(259, 100%, 65%);
+}
+
+#submit-button{
+    padding: 25px;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 100%;
+    transform: scale(0.5);
+}
+
+#submit-button:hover{
+    background-color: hsl(0, 0%, 8%);
 }

@@ -5,25 +5,17 @@ window.addEventListener("load", function() {
     const monthInput = document.querySelector("#inp-month");
     const yearInput = document.querySelector("#inp-year");
 
+    //Submit button query selector
+    const submitButton = document.querySelector("#submit-button");
+
     //Display query selectors
     const dayDisplay = document.querySelector("#disp-day");
     const monthDisplay = document.querySelector("#disp-month");
     const yearDisplay = document.querySelector("#disp-year");
 
-    dayInput.addEventListener("input", function(){
-        console.log(dayInput.value);
+    submitButton.addEventListener("click", function(){
         calculateAge(dayInput.value,monthInput.value,yearInput.value);
-    })
-
-    monthInput.addEventListener("input", function(){
-        console.log(monthInput.value);
-        calculateAge(dayInput.value,monthInput.value,yearInput.value);
-    })
-
-    yearInput.addEventListener("input", function(){
-        console.log(yearInput.value);
-        calculateAge(dayInput.value,monthInput.value,yearInput.value);
-    })
+    }); 
 
     function calculateAge(day,month,year){
         const date = new Date();
@@ -36,21 +28,21 @@ window.addEventListener("load", function() {
         const ageYear = currentYear - year;
         
         if(day != ""){
-            dayDisplay.innerText = `${ageDay} Days`;
+            dayDisplay.innerHTML = `<strong>${ageDay}</strong>days`;
         } else {
             dayDisplay.innerText = `-- days`;
         }
 
         if(month != ""){
-            monthDisplay.innerText = `${ageMonth} Months`;
+            monthDisplay.innerHTML = `<strong>${ageMonth}</strong>months`;
         } else {
-            monthDisplay.innerText = `-- Months`;
+            monthDisplay.innerText = `-- months`;
         }
         
         if(year != ""){
-            yearDisplay.innerText = `${ageYear} Years`;
+            yearDisplay.innerHTML = `<strong>${ageYear}</strong>years`;
         } else {
-            yearDisplay.innerText = `-- Years`;
+            yearDisplay.innerText = `-- years`;
         }
     }
 

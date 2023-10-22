@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" text="text/css" href="/age-calculator-app-main/assets/styles.css">
-  <script src="/age-calculator-app-main/assets/client.js"></script>
+  <link rel="stylesheet" text="text/css" href="./assets/styles.css">
+  <script src="./assets/client.js"></script>
   
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -19,14 +19,16 @@
 <body>
   <div id="container">
     <div id="content-container">
-      <label for="inp-day">DAY</label>
+      <label class="labels" for="inp-day">DAY</label>
       <input id="inp-day" type="number" min="1" max="31" placeholder="DD">
 
-      <label for="inp-month">MONTH</label>
+      <label class="labels" for="inp-month">MONTH</label>
       <input id="inp-month" type="number" min="1" max="12" placeholder="MM">
 
-      <label for="inp-year">YEAR</label>
+      <label class="labels" for="inp-year">YEAR</label>
       <input id="inp-year" type="number" min="1900" max="2021" placeholder="YYYY">
+      <button id="submit-button"><img src="./assets/images/icon-arrow.svg"></button>
+      <hr>
 
       <p class="age-display" id="disp-year">-- Years</p>
       <p class="age-display" id="disp-month">-- Months</p>
